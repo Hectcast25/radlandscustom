@@ -1,0 +1,267 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   } 
+
+  .logo img {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 60px;
+  }
+
+.nav-links {
+  overflow: hidden;
+  background-color: #333;
+ } 
+
+.nav-links a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+.nav-links a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+
+  .nav-links a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .nav-links .icon {
+    display: none;
+  }
+
+  
+@media screen and (max-width: 600px) {
+  .nav-links a:not(:first-child) {display: none;}
+  .nav-links a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links.responsive {position: relative;}
+  .nav-links.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ }
+
+.center_title {
+    text-align: center;
+    background-image: url("img/bicycle-street.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 100% ;
+    padding: 15%;
+}
+
+.center_title h1 {
+     color: aliceblue; 
+     font-size: xx-large;
+  }
+
+   p {
+    color: aliceblue; 
+    font-size: smaller;
+   
+ }
+.btn {
+    padding: 15px 25px;
+    background-color: transparent;
+    color: white;
+    font-size: larger;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: orange;
+  
+  }
+
+.btn:hover {
+    color: orange;  
+ }
+ 
+
+ div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 325px;
+  margin-bottom: 30px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: aliceblue;
+}
+
+  .video_bikes {
+    text-align: center;
+  }
+
+ /* .galery_img {
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+   }
+  
+   .galery_img li {
+    display: inline-block;
+    padding: 0px 10px;
+    padding-top: 10px;  
+ }
+
+   .galery_img img {
+     width: 300px;
+     height: 300px;
+  }*/
+
+  .contact_nos {
+        text-align: center;
+        font-size: xx-large;
+        color: aliceblue;
+    }
+  
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 550px;
+      max-height: 500px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+  /*productos*/
+    .carta {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      margin-top: 30px;
+      margin-left: 25px;
+     
+
+      text-align: center;
+      font-family: arial;
+      display: inline-block;
+    }
+    
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+    
+    
